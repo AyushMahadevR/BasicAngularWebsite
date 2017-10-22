@@ -1,119 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>Computer Solutions</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="justified-nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-    <div class="container">
-
-        <!-- The justified navigation menu is meant for single line per list item.
-           Multiple lines will require custom code not provided by Bootstrap. -->
-        <div class="masthead">
-            <h3 class="text-muted">Computer Solutions</h3>
-            <nav>
-                <ul class="nav nav-justified">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Services</h2>
+<h2>Services</h2>
+<div ng-repeat="service in services">
                 <div class="row service">
                     <div class="col-md-2">
                         <img src="http://wfarm4.dataknet.com/static/resources/icons/set181/5be2d6ea.png" alt="computer-icon">
 
                     </div>
                     <div class="col-md-10">
-                        <h3>Hardware Repair</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pellentesque neque, elementum porttitor nulla. Pellentesque
-                        sit amet sapien ipsum. Phasellus dui tortor, suscipit in mi cursus, ullamcorper ultrices elit. Donec eleifend augue metus,
-                        non feugiat ante commodo et. Donec quis erat tincidunt, scelerisque tortor tempus, tristique quam. Aenean at enim ipsum.
-                        Etiam ut feugiat lorem, at scelerisque metus. Duis quis augue a dui fringilla congue. Aliquam feugiat ipsum malesuada tellus
-                        dignissim dapibus. Sed eu risus at nulla cursus ornare ut sit amet tellus. Donec ultricies, velit ac lacinia molestie, enim
-                        quam blandit dolor, a finibus ipsum purus pellentesque mauris.</p>
+                        <h3>{{service.name}}</h3>
+                        <p>{{service.description}}</p>
                         <a href="contact.html" class="btn btn-primary">Contact Us</a>
                     </div>
                 </div>
-                <div class="row service">
-                    <div class="col-md-2">
-                        <img src="http://wfarm4.dataknet.com/static/resources/icons/set181/5be2d6ea.png" alt="computer-icon">
-                
-                    </div>
-                    <div class="col-md-10">
-                        <h3>Hardware Repair</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pellentesque neque, elementum porttitor nulla.
-                            Pellentesque sit amet sapien ipsum. Phasellus dui tortor, suscipit in mi cursus, ullamcorper ultrices elit. Donec
-                            eleifend augue metus, non feugiat ante commodo et. Donec quis erat tincidunt, scelerisque tortor tempus, tristique
-                            quam. Aenean at enim ipsum. Etiam ut feugiat lorem, at scelerisque metus. Duis quis augue a dui fringilla congue.
-                            Aliquam feugiat ipsum malesuada tellus dignissim dapibus. Sed eu risus at nulla cursus ornare ut sit amet tellus.
-                            Donec ultricies, velit ac lacinia molestie, enim quam blandit dolor, a finibus ipsum purus pellentesque mauris.</p>
-                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                    </div>
-                </div>
-                <div class="row service">
-                    <div class="col-md-2">
-                        <img src="http://wfarm4.dataknet.com/static/resources/icons/set181/5be2d6ea.png" alt="computer-icon">
-                
-                    </div>
-                    <div class="col-md-10">
-                        <h3>Hardware Repair</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pellentesque neque, elementum porttitor nulla.
-                            Pellentesque sit amet sapien ipsum. Phasellus dui tortor, suscipit in mi cursus, ullamcorper ultrices elit. Donec
-                            eleifend augue metus, non feugiat ante commodo et. Donec quis erat tincidunt, scelerisque tortor tempus, tristique
-                            quam. Aenean at enim ipsum. Etiam ut feugiat lorem, at scelerisque metus. Duis quis augue a dui fringilla congue.
-                            Aliquam feugiat ipsum malesuada tellus dignissim dapibus. Sed eu risus at nulla cursus ornare ut sit amet tellus.
-                            Donec ultricies, velit ac lacinia molestie, enim quam blandit dolor, a finibus ipsum purus pellentesque mauris.</p>
-                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Site footer -->
-        <footer class="footer">
-            <p>&copy; 2016 Company, Inc.</p>
-        </footer>
-
-    </div>
-    <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
-
-</html>
+          
+</div>
